@@ -1,0 +1,15 @@
+c:\users\tcarey\documents\visual studio 2012\Projects\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.config
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csprojResolveAssemblyReference.cache
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.Properties.Resources.resources
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csproj.GenerateResource.Cache
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.pdb
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe
+C:\Users\tcarey\Documents\Visual Studio 2012\Projects\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.pdb
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.config
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.pdb
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.Properties.Resources.resources
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csproj.GenerateResource.Cache
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe
+C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.pdb
