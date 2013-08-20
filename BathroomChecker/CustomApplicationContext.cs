@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 //using System.Windows.Forms.Integration;
 using System.Reflection;
+using System.Timers;
 
 /*
  * ==============================================================
@@ -67,16 +68,22 @@ namespace BathroomChecker
         {
             InitializeContext();
             brChecker = new BathroomChecker(notifyIcon);
-            while (true)
-            {
-                brChecker.checkStatus();
-                System.Threading.Thread.Sleep(5000);
-            }
+            
+            var timer = new System.Timers.Timer(5000);
+            timer.Elapsed += CheckBathroomStatus;
+            timer.Start();
+            CheckBathroomStatus(null, null);
+        }
+
+        private void CheckBathroomStatus(object sender, ElapsedEventArgs args)
+        {
+            brChecker.checkStatus();
         }
 
         private void ContextMenuStrip_Opening(object sender, System.ComponentModel.CancelEventArgs e)
         {
             e.Cancel = false;
+            notifyIcon.ContextMenuStrip.Items.Clear();
             notifyIcon.ContextMenuStrip.Items.Add(brChecker.ToolStripMenuItemWithHandler("&Exit", exitItem_Click));
         }
 

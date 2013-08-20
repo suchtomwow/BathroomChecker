@@ -24,6 +24,7 @@ namespace BathroomChecker
         private static readonly string OpenToolTip = "Vacant";
         private static readonly string ClosedToolTip = "Occupied";
         private static readonly string PendingToolTip = "Unknown";
+        private string OldStatus;
 
         public BathroomChecker(NotifyIcon notifyIcon)
         {
@@ -32,47 +33,58 @@ namespace BathroomChecker
 
         public void checkStatus()
         {
-            string fnIcon = PendingIcon;
             string status = readStatus();
-            string tooltip = PendingToolTip;
+            bool check = (status.Equals(OldStatus) == false);
 
-            if( status.Equals(OpenResponse) )
+            if (check)
             {
-                fnIcon = OpenIcon;
-                tooltip = OpenToolTip;
-            }
-            else if( status.Equals(ClosedResponse) )
-            {
-                fnIcon = ClosedIcon;
-                tooltip = ClosedToolTip;
-            }
-            else
-            {
-                fnIcon = PendingIcon;
-                tooltip = PendingToolTip;
-            }
+                string fnIcon = PendingIcon;
+                string tooltip = PendingToolTip;
 
-            icon = new Icon(fnIcon);
-            this.notifyIcon.Icon.Dispose(); 
-            this.notifyIcon.Icon = icon;
-            this.notifyIcon.Text = Status + tooltip;
+                if (status.Equals(OpenResponse))
+                {
+                    fnIcon = OpenIcon;
+                    tooltip = OpenToolTip;
+                }
+                else if (status.Equals(ClosedResponse))
+                {
+                    fnIcon = ClosedIcon;
+                    tooltip = ClosedToolTip;
+                }
+                else
+                {
+                    fnIcon = PendingIcon;
+                    tooltip = PendingToolTip;
+                }
+
+                icon = new Icon(fnIcon);
+                this.notifyIcon.Icon.Dispose();
+                this.notifyIcon.Icon = icon;
+                this.notifyIcon.Text = Status + tooltip;
+            } 
+            
+            OldStatus = status;
         }
 
         private string readStatus()
         {
-            WebClient client = new WebClient();
+            var client = new WebClient();
 
             // Add a user agent header in case the 
             // requested URI contains a query.
 
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)");
 
-            Stream data = client.OpenRead(Site);
-            StreamReader reader = new StreamReader(data);
-            string s = reader.ReadToEnd();
-            data.Close();
-            reader.Close();
-            return s;
+            string result;
+            using (var data = client.OpenRead(Site))
+            {
+                using (var reader = new StreamReader(data))
+                {
+                    result = reader.ReadToEnd();
+                }
+            }
+
+            return result;
         }
 
         private ToolStripMenuItem ToolStripMenuItemWithHandler(string displayText, int enabledCount, int disabledCount, EventHandler eventHandler)
