@@ -13,3 +13,15 @@ C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\Bathr
 C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csproj.GenerateResource.Cache
 C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe
 C:\Users\wcarey.KALOSINC\Desktop\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.pdb
+E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.config
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.pdb
+E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe
+E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.pdb
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csprojResolveAssemblyReference.cache
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.Properties.Resources.resources
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csproj.GenerateResource.Cache
+E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.manifest
+E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.application
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe.manifest
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.application

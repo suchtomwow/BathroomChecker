@@ -82,7 +82,10 @@ namespace BathroomChecker
                 {
                     result = reader.ReadToEnd();
                 }
+                
             }
+
+            GC.Collect();
 
             return result;
         }
