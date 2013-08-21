@@ -68,7 +68,9 @@ namespace BathroomChecker
         {
             InitializeContext();
             brChecker = new BathroomChecker(notifyIcon);
-            
+
+            brChecker.checkStatus();
+
             var timer = new System.Timers.Timer(1000);
             timer.Elapsed += CheckBathroomStatus;
             timer.Start();

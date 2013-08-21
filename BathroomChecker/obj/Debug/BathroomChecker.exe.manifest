@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="BathroomChecker.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="BathroomChecker.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="STOPLIGHT.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="BathroomChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BathroomChecker.exe" size="12800">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BathroomChecker.exe" size="110592">
       <assemblyIdentity name="BathroomChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E+iApsUu1z+ObLkVG9A0aN2R1yiYm9Lz3AkKUj33vWY=</dsig:DigestValue>
+        <dsig:DigestValue>hZsfNzItqE+FRSN2qJwQZIQKNeesAsFTypKAHH9v/Yg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,31 +63,40 @@
       <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="signal-green.ico" size="99678">
+  <file name="signal_green.ico" size="16958">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Y8gMQlKNSsVsCEwyj65V0UwlktRfNosk+DeukIBPhFo=</dsig:DigestValue>
+      <dsig:DigestValue>pQJPMUJ8Ed/E2Lve4M2pkg6tWgWUnPoYHyw8otf5+cw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="signal-red.ico" size="99678">
+  <file name="signal_red.ico" size="16958">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bHk3jZOXHbCt9k05pcRMIbH0+r8lWSg0POpV1Ncztks=</dsig:DigestValue>
+      <dsig:DigestValue>y8MJCXtr16qoUOdrNEMcHAo5Au/bGhFDYq8M6Dn5/i8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="signal-yellow.ico" size="99678">
+  <file name="signal_yellow.ico" size="16958">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Ig4Gcir65cylF2eB26hHYm19stuU909eCVX34Y1moLE=</dsig:DigestValue>
+      <dsig:DigestValue>RoHAxf6947RmRSSRs2oRMkoVvonONJJsju/kiAB5Qk4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="STOPLIGHT.ico" size="97585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NajOhTiNSZcNkkzI6NbpWYebppBpMH1t6Qg8swxwouU=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

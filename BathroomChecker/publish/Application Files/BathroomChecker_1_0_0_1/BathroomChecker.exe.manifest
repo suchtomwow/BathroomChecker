@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="BathroomChecker.exe" version="1.0.0.1" publicKeyToken="c2a1a44263e97599" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="STOPLIGHT.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="BathroomChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="BathroomChecker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BathroomChecker.exe" size="110592">
+      <assemblyIdentity name="BathroomChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+4y2b63d4JAiZb6waN6zGg5dzVK8qQxwB840idEdlAc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="BathroomChecker.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="STOPLIGHT.ico" size="97585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NajOhTiNSZcNkkzI6NbpWYebppBpMH1t6Qg8swxwouU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=KALOSINC\tcarey" issuerKeyHash="5ec55f8c9e2b07498e7659237499eabcb25f1032" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+Kdoo5oD99uUIL59FiHsocFkmOT+Ej8NYRGNzPzTcSE=</DigestValue></Reference></SignedInfo><SignatureValue>t4mabydHn9118/D/Q2wIbAZKH9ih4v1NW+iKlvF4abogQPy6VlMvyL9VIHjp/R67yXTagz7MZgikugYXFF1YcM2bJT5NL9qg/TZiaO6COCoq2vQMyk/8cUnLH7V8Hm8oMG0KpDT8ia/KDKH7AG0IooNT7dc3xJyAQTpSdFga6C8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>viBOk9BAjbDDn01GuGTAp2v4sXK2VI+cwcfzqeuHMgNCawrMg2Xt+AXa1NSvi4k/xDv26eEIPgePjKQWr1uuabKZW7H3n8TMpq5LenwdqCBsxIznWWY3ZRytDLW30LuHEZmZGOPNeQtuDAbDu7o+E6UChg3Q1uthaGPb6BZq120=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2171d3fccc8d11610d3f12fee49864c1a1ec21167dbe2094dbf7039aa368a7f8" Description="" Url=""><as:assemblyIdentity name="BathroomChecker.exe" version="1.0.0.1" publicKeyToken="c2a1a44263e97599" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=KALOSINC\tcarey</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>P+zjVOHFcEOcdoQNfZ57hIIXciX8pQce85CcjZbZCko=</DigestValue></Reference></SignedInfo><SignatureValue>B5LKp1fhPPW+LRZVvZTeL5uZe2RDZEQt/i5T9VwTnR5TR+667Z3RW7x0cfd2ANoJuMHspJSAybNGLMWvZqgOsAn35/X90EBIijNuylNMb2Lb12VYH45L2hE8ZwKi8gb4KgOosviHEbXcwBYiJrPQOke6PtBTf4F7Zlsw/Hmb3Ac=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>viBOk9BAjbDDn01GuGTAp2v4sXK2VI+cwcfzqeuHMgNCawrMg2Xt+AXa1NSvi4k/xDv26eEIPgePjKQWr1uuabKZW7H3n8TMpq5LenwdqCBsxIznWWY3ZRytDLW30LuHEZmZGOPNeQtuDAbDu7o+E6UChg3Q1uthaGPb6BZq120=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQVHXcgDnGyLJOQS1RXKcEdTANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ASwBBAEwATwBTAEkATgBDAFwAdABjAGEAcgBlAHkwHhcNMTMwODIwMjAyNjAzWhcNMTQwODIxMDIyNjAzWjApMScwJQYDVQQDHh4ASwBBAEwATwBTAEkATgBDAFwAdABjAGEAcgBlAHkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL4gTpPQQI2ww59NRrhkwKdr+LFytlSPnMHH86nrhzIDQmsKzINl7fgF2tTUr4uJP8Q79unhCD4Hj4ykFq9brmmymVux95/EzKauS3p8HaggbMSM51lmN2UcrQy1t9C7hxGZmRjjzXkLbgwGw7u6PhOlAoYN0NbrYWhj2+gWatdtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAKVOJyrL8D73OicYVFEYooNtInHaByLqUL+mgAKgwzt5/az9lzx28tNxtpUaJUa8C55p68RJfUXx8+BGnNb+pHbv2JGaIC/lsGcqQtwaM/HWiJgIXtToeVR/zyzOcYEuyYU+cO49OUMaNO8gyXcoipRjG3np301nMMIua5mszTVY=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
