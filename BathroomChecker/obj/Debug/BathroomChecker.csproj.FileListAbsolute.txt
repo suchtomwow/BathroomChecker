@@ -25,3 +25,4 @@ E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.manifest
 E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.application
 E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe.manifest
 E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.application
+E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.OptionsForm.resources

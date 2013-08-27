@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BathroomChecker.exe" size="110592">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BathroomChecker.exe" size="392192">
       <assemblyIdentity name="BathroomChecker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hZsfNzItqE+FRSN2qJwQZIQKNeesAsFTypKAHH9v/Yg=</dsig:DigestValue>
+        <dsig:DigestValue>kZfAg/nMi62EsG2ZskjQdrnQI7m24LE2CcQ7+yaktqE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
