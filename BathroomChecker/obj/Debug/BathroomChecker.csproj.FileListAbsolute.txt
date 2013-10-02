@@ -26,3 +26,15 @@ E:\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.application
 E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe.manifest
 E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.application
 E:\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.OptionsForm.resources
+D:\Git\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.config
+D:\Git\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe.manifest
+D:\Git\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.application
+D:\Git\BathroomChecker\BathroomChecker\bin\Debug\BathroomChecker.exe
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csprojResolveAssemblyReference.cache
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.OptionsForm.resources
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.Properties.Resources.resources
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.csproj.GenerateResource.Cache
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe.manifest
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.application
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.exe
+D:\Git\BathroomChecker\BathroomChecker\obj\Debug\BathroomChecker.pdb
