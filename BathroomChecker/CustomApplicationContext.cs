@@ -15,7 +15,6 @@ namespace BathroomChecker
     /// </remarks>
     public class CustomApplicationContext : ApplicationContext
     {
-        private static readonly string IconFileName = "signal_yellow.ico";
         private static readonly string DefaultTooltip = "Men's Bathroom Status";
         private readonly BathroomChecker brChecker;
 
@@ -96,7 +95,7 @@ namespace BathroomChecker
             notifyIcon = new NotifyIcon(components)
                              {
                                  ContextMenuStrip = new ContextMenuStrip(),
-                                 Icon = new Icon(IconFileName),
+                                 Icon = Properties.Resources.signal_yellow,
                                  Text = DefaultTooltip,
                                  Visible = true
                              };
