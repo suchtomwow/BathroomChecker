@@ -137,12 +137,9 @@
   <ItemGroup>
     <None Include="Resources\STOPLIGHT.jpg" />
     <None Include="Resources\STOPLIGHT1.jpg" />
-    <Resource Include="signal_green.ico" />
     <None Include="Resources\signal_green.ico" />
     <None Include="Resources\signal_red.ico" />
     <None Include="Resources\signal_yellow.ico" />
-    <Content Include="signal_red.ico" />
-    <Content Include="signal_yellow.ico" />
     <Content Include="STOPLIGHT.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

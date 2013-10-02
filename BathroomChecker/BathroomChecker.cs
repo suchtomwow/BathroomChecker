@@ -12,33 +12,30 @@ namespace BathroomChecker
 {
     public class BathroomChecker
     {
-        private readonly NotifyIcon notifyIcon;
-        private static readonly string OpenIcon = "signal_green.ico";
-        private static readonly string ClosedIcon = "signal_red.ico";
-        private static readonly string PendingIcon = "signal_yellow.ico";
-        private static readonly string Site = "http://kalosdev/bathroom.php";
-        private static readonly string OpenResponse = "<div><img src=\"images/Open.jpg\"  height=\"100\" width=\"60\" /></div>";
-        private static readonly string ClosedResponse = "<div><img src=\"images/Closed.jpg\"  height=\"100\" width=\"60\" /></div>";
-        private static readonly string Status = "Bathroom Status: ";
-        private static readonly string OpenToolTip = "Vacant";
-        private static readonly string ClosedToolTip = "Occupied";
-        private static readonly string PendingToolTip = "Unknown";
-        private string OldStatus;
+        private readonly NotifyIcon _notifyIcon;
+        private const string Site = "http://kalosdev/bathroom.php";
+        private const string OpenResponse = "<div><img src=\"images/Open.jpg\"  height=\"100\" width=\"60\" /></div>";
+        private const string ClosedResponse = "<div><img src=\"images/Closed.jpg\"  height=\"100\" width=\"60\" /></div>";
+        private const string Status = "Bathroom Status: ";
+        private const string OpenToolTip = "Vacant";
+        private const string ClosedToolTip = "Occupied";
+        private const string PendingToolTip = "Unknown";
+        private string _oldStatus;
 
         public BathroomChecker(NotifyIcon notifyIcon)
         {
-            this.notifyIcon = notifyIcon;
+            _notifyIcon = notifyIcon;
         }
 
-        public void checkStatus()
+        public void CheckStatus()
         {
-            string status = readStatus();
-            bool check = (status.Equals(OldStatus) == false);
+            var status = ReadStatus();
+            var check = (status.Equals(_oldStatus) == false);
 
             if (check)
             {
-                string tooltip = PendingToolTip;
-                Icon icon = Properties.Resources.signal_yellow;
+                var tooltip = PendingToolTip;
+                var icon = Properties.Resources.signal_yellow;
 
                 if (status.Equals(OpenResponse))
                 {
@@ -51,15 +48,15 @@ namespace BathroomChecker
                     tooltip = ClosedToolTip;
                 }
 
-                this.notifyIcon.Icon.Dispose();
-                this.notifyIcon.Icon = icon;
-                this.notifyIcon.Text = Status + tooltip;
+                _notifyIcon.Icon.Dispose();
+                _notifyIcon.Icon = icon;
+                _notifyIcon.Text = Status + tooltip;
             } 
             
-            OldStatus = status;
+            _oldStatus = status;
         }
 
-        private string readStatus()
+        private string ReadStatus()
         {
             var client = new WebClient();
 

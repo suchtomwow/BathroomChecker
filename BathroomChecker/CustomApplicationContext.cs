@@ -27,7 +27,7 @@ namespace BathroomChecker
             InitializeContext();
             brChecker = new BathroomChecker(notifyIcon);
 
-            brChecker.checkStatus();
+            brChecker.CheckStatus();
 
             var timer = new System.Timers.Timer(1000);
             timer.Elapsed += CheckBathroomStatus;
@@ -37,7 +37,7 @@ namespace BathroomChecker
 
         private void CheckBathroomStatus(object sender, ElapsedEventArgs args)
         {
-            brChecker.checkStatus();
+            brChecker.CheckStatus();
         }
 
         private void ContextMenuStrip_Opening(object sender, System.ComponentModel.CancelEventArgs e)
