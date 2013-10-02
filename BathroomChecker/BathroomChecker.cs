@@ -13,7 +13,6 @@ namespace BathroomChecker
     public class BathroomChecker
     {
         private readonly NotifyIcon notifyIcon;
-        private Icon icon;
         private static readonly string OpenIcon = "signal_green.ico";
         private static readonly string ClosedIcon = "signal_red.ico";
         private static readonly string PendingIcon = "signal_yellow.ico";
@@ -38,26 +37,20 @@ namespace BathroomChecker
 
             if (check)
             {
-                string fnIcon = PendingIcon;
                 string tooltip = PendingToolTip;
+                Icon icon = Properties.Resources.signal_yellow;
 
                 if (status.Equals(OpenResponse))
                 {
-                    fnIcon = OpenIcon;
+                    icon = Properties.Resources.signal_green;
                     tooltip = OpenToolTip;
                 }
                 else if (status.Equals(ClosedResponse))
                 {
-                    fnIcon = ClosedIcon;
+                    icon = Properties.Resources.signal_red;
                     tooltip = ClosedToolTip;
                 }
-                else
-                {
-                    fnIcon = PendingIcon;
-                    tooltip = PendingToolTip;
-                }
 
-                icon = new Icon(fnIcon);
                 this.notifyIcon.Icon.Dispose();
                 this.notifyIcon.Icon = icon;
                 this.notifyIcon.Text = Status + tooltip;
