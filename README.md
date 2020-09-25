@@ -1,4 +1,4 @@
 BathroomChecker
 ===============
 
-Checks the status of the men's restroom at Kalos, Inc.
+Checks the status of the men's restroom door ajar-ness at Kalos, Inc.
